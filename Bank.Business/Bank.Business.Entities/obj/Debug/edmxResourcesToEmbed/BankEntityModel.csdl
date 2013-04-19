@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="BankEntityModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+  <EntityContainer Name="BankEntityModelContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Customers" EntityType="BankEntityModel.Customer" />
+    <EntitySet Name="Accounts" EntityType="BankEntityModel.Account" />
+    <AssociationSet Name="CustomerAccount" Association="BankEntityModel.CustomerAccount">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="Account" EntitySet="Accounts" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Accounts" Relationship="BankEntityModel.CustomerAccount" FromRole="Customer" ToRole="Account" />
+  </EntityType>
+  <EntityType Name="Account">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Customer" Relationship="BankEntityModel.CustomerAccount" FromRole="Account" ToRole="Customer" />
+    <Property Type="Int32" Name="AccountNumber" Nullable="false" />
+    <Property Type="Double" Name="Balance" Nullable="false" />
+  </EntityType>
+  <Association Name="CustomerAccount">
+    <End Type="BankEntityModel.Customer" Role="Customer" Multiplicity="1" />
+    <End Type="BankEntityModel.Account" Role="Account" Multiplicity="*" />
+  </Association>
+</Schema>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/DeliveryCo.Business.Entities" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/DeliveryCo.Business.Entities" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" />
+  <xs:complexType name="DeliveryInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q1:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DeliveryIdentifier" type="ser:guid" />
+          <xs:element minOccurs="0" name="DeliveryNotificationAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DestinationAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+          <xs:element minOccurs="0" name="OrderNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SourceAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Status" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DeliveryInfo" nillable="true" type="tns:DeliveryInfo" />
+</xs:schema>

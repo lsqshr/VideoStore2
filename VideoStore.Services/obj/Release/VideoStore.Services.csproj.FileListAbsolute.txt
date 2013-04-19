@@ -1,0 +1,42 @@
+C:\Users\Matt\Desktop\comp5348\2011\VideoStore\VideoStore.Services\bin\Release\VideoStore.Services.dll
+C:\Users\Matt\Desktop\comp5348\2011\VideoStore\VideoStore.Services\bin\Release\VideoStore.Services.pdb
+C:\Users\Matt\Desktop\comp5348\2011\VideoStore\VideoStore.Services\bin\Release\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Matt\Desktop\comp5348\2011\VideoStore\VideoStore.Services\bin\Release\VideoStore.Business.Components.Interfaces.dll
+C:\Users\Matt\Desktop\comp5348\2011\VideoStore\VideoStore.Services\bin\Release\VideoStore.Business.Entities.dll
+C:\Users\Matt\Desktop\comp5348\2011\VideoStore\VideoStore.Services\bin\Release\VideoStore.Services.Interfaces.dll
+C:\Users\Matt\Desktop\comp5348\2011\VideoStore\VideoStore.Services\bin\Release\Common.dll
+C:\Users\Matt\Desktop\comp5348\2011\VideoStore\VideoStore.Services\bin\Release\VideoStore.Business.Components.Interfaces.pdb
+C:\Users\Matt\Desktop\comp5348\2011\VideoStore\VideoStore.Services\bin\Release\VideoStore.Business.Entities.pdb
+C:\Users\Matt\Desktop\comp5348\2011\VideoStore\VideoStore.Services\bin\Release\VideoStore.Services.Interfaces.pdb
+C:\Users\Matt\Desktop\comp5348\2011\VideoStore\VideoStore.Services\bin\Release\Common.pdb
+C:\Users\Matt\Desktop\comp5348\2011\VideoStore\VideoStore.Services\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Matt\Desktop\comp5348\2011\VideoStore\VideoStore.Services\obj\Release\VideoStore.Services.dll
+C:\Users\Matt\Desktop\comp5348\2011\VideoStore\VideoStore.Services\obj\Release\VideoStore.Services.pdb
+E:\2011\rev4\VideoStore\VideoStore.Services\bin\Release\VideoStore.Services.dll
+E:\2011\rev4\VideoStore\VideoStore.Services\bin\Release\VideoStore.Services.pdb
+E:\2011\rev4\VideoStore\VideoStore.Services\bin\Release\Microsoft.Practices.ServiceLocation.dll
+E:\2011\rev4\VideoStore\VideoStore.Services\bin\Release\VideoStore.Business.Components.Interfaces.dll
+E:\2011\rev4\VideoStore\VideoStore.Services\bin\Release\VideoStore.Business.Entities.dll
+E:\2011\rev4\VideoStore\VideoStore.Services\bin\Release\VideoStore.Services.Interfaces.dll
+E:\2011\rev4\VideoStore\VideoStore.Services\bin\Release\Common.dll
+E:\2011\rev4\VideoStore\VideoStore.Services\bin\Release\VideoStore.Business.Components.Interfaces.pdb
+E:\2011\rev4\VideoStore\VideoStore.Services\bin\Release\VideoStore.Business.Entities.pdb
+E:\2011\rev4\VideoStore\VideoStore.Services\bin\Release\VideoStore.Services.Interfaces.pdb
+E:\2011\rev4\VideoStore\VideoStore.Services\bin\Release\Common.pdb
+E:\2011\rev4\VideoStore\VideoStore.Services\obj\Release\ResolveAssemblyReference.cache
+E:\2011\rev4\VideoStore\VideoStore.Services\obj\Release\VideoStore.Services.dll
+E:\2011\rev4\VideoStore\VideoStore.Services\obj\Release\VideoStore.Services.pdb
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.Services\bin\Release\VideoStore.Services.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.Services\bin\Release\VideoStore.Services.pdb
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.Services\bin\Release\Microsoft.Practices.ServiceLocation.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.Services\bin\Release\VideoStore.Business.Components.Interfaces.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.Services\bin\Release\VideoStore.Business.Entities.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.Services\bin\Release\VideoStore.Services.Interfaces.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.Services\bin\Release\Common.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.Services\bin\Release\VideoStore.Business.Components.Interfaces.pdb
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.Services\bin\Release\VideoStore.Business.Entities.pdb
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.Services\bin\Release\VideoStore.Services.Interfaces.pdb
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.Services\bin\Release\Common.pdb
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.Services\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.Services\obj\Release\VideoStore.Services.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.Services\obj\Release\VideoStore.Services.pdb

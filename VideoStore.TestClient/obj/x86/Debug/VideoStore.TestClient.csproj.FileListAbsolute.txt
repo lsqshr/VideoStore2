@@ -1,0 +1,6 @@
+C:\Users\Matt\Desktop\comp5348\2011\VideoStore\VideoStore.TestClient\bin\Debug\VideoStore.TestClient.exe.config
+C:\Users\Matt\Desktop\comp5348\2011\VideoStore\VideoStore.TestClient\bin\Debug\VideoStore.TestClient.exe
+C:\Users\Matt\Desktop\comp5348\2011\VideoStore\VideoStore.TestClient\bin\Debug\VideoStore.TestClient.pdb
+C:\Users\Matt\Desktop\comp5348\2011\VideoStore\VideoStore.TestClient\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Matt\Desktop\comp5348\2011\VideoStore\VideoStore.TestClient\obj\x86\Debug\VideoStore.TestClient.exe
+C:\Users\Matt\Desktop\comp5348\2011\VideoStore\VideoStore.TestClient\obj\x86\Debug\VideoStore.TestClient.pdb

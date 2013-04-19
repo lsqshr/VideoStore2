@@ -1,0 +1,75 @@
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.Business.Components\bin\Debug\VideoStore.Business.Components.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.Business.Components\bin\Debug\VideoStore.Business.Components.pdb
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.Business.Components\bin\Debug\Common.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.Business.Components\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.Business.Components\bin\Debug\VideoStore.Business.Components.Interfaces.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.Business.Components\bin\Debug\VideoStore.Business.Entities.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.Business.Components\bin\Debug\Common.pdb
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.Business.Components\bin\Debug\VideoStore.Business.Components.Interfaces.pdb
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.Business.Components\bin\Debug\VideoStore.Business.Entities.pdb
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.Business.Components\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.Business.Components\obj\Debug\VideoStore.Business.Components.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.Business.Components\obj\Debug\VideoStore.Business.Components.pdb
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.Business.Components\bin\Debug\VideoStore.Business.Components.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.Business.Components\bin\Debug\VideoStore.Business.Components.pdb
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.Business.Components\bin\Debug\Common.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.Business.Components\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.Business.Components\bin\Debug\VideoStore.Business.Components.Interfaces.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.Business.Components\bin\Debug\VideoStore.Business.Entities.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.Business.Components\bin\Debug\Common.pdb
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.Business.Components\bin\Debug\VideoStore.Business.Components.Interfaces.pdb
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.Business.Components\bin\Debug\VideoStore.Business.Entities.pdb
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.Business.Components\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.Business.Components\obj\Debug\VideoStore.Business.Components.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.Business.Components\obj\Debug\VideoStore.Business.Components.pdb
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.Business.Components\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.Business.Components\obj\Debug\VideoStore.Business.Components.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.Business.Components\obj\Debug\VideoStore.Business.Components.pdb
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.Business.Components\bin\Debug\VideoStore.Business.Components.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.Business.Components\bin\Debug\VideoStore.Business.Components.pdb
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.Business.Components\bin\Debug\Common.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.Business.Components\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.Business.Components\bin\Debug\VideoStore.Business.Components.Interfaces.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.Business.Components\bin\Debug\VideoStore.Business.Entities.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.Business.Components\bin\Debug\Common.pdb
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.Business.Components\bin\Debug\VideoStore.Business.Components.Interfaces.pdb
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.Business.Components\bin\Debug\VideoStore.Business.Entities.pdb
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.Business.Components\bin\Debug\VideoStore.Business.Components.dll
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.Business.Components\bin\Debug\VideoStore.Business.Components.pdb
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.Business.Components\bin\Debug\Common.dll
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.Business.Components\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.Business.Components\bin\Debug\VideoStore.Business.Components.Interfaces.dll
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.Business.Components\bin\Debug\VideoStore.Business.Entities.dll
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.Business.Components\bin\Debug\Common.pdb
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.Business.Components\bin\Debug\VideoStore.Business.Components.Interfaces.pdb
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.Business.Components\bin\Debug\VideoStore.Business.Entities.pdb
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.Business.Components\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.Business.Components\obj\Debug\VideoStore.Business.Components.dll
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.Business.Components\obj\Debug\VideoStore.Business.Components.pdb
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.Business.Components\bin\Debug\VideoStore.Business.Components.dll.config
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.Business.Components\bin\Debug\VideoStore.Business.Components.dll.config
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.Business.Components\bin\Debug\VideoStore.Business.Components.dll
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.Business.Components\bin\Debug\VideoStore.Business.Components.pdb
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.Business.Components\bin\Debug\Common.dll
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.Business.Components\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.Business.Components\bin\Debug\VideoStore.Business.Components.Interfaces.dll
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.Business.Components\bin\Debug\VideoStore.Business.Entities.dll
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.Business.Components\bin\Debug\Common.pdb
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.Business.Components\bin\Debug\VideoStore.Business.Components.Interfaces.pdb
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.Business.Components\bin\Debug\VideoStore.Business.Entities.pdb
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.Business.Components\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.Business.Components\obj\Debug\VideoStore.Business.Components.dll
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.Business.Components\obj\Debug\VideoStore.Business.Components.pdb
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.Business.Components\bin\Debug\VideoStore.Business.Components.dll.config
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.Business.Components\bin\Debug\VideoStore.Business.Components.dll
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.Business.Components\bin\Debug\VideoStore.Business.Components.pdb
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.Business.Components\bin\Debug\Common.dll
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.Business.Components\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.Business.Components\bin\Debug\VideoStore.Business.Components.Interfaces.dll
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.Business.Components\bin\Debug\VideoStore.Business.Entities.dll
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.Business.Components\bin\Debug\Common.pdb
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.Business.Components\bin\Debug\VideoStore.Business.Components.Interfaces.pdb
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.Business.Components\bin\Debug\VideoStore.Business.Entities.pdb
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.Business.Components\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.Business.Components\obj\Debug\VideoStore.Business.Components.dll
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.Business.Components\obj\Debug\VideoStore.Business.Components.pdb

@@ -1,0 +1,24 @@
+C:\Users\Matt\Desktop\comp5348\2011\VideoStore\VideoStore.Entities\VideoStore.Business.Entities\bin\Release\VideoStore.Business.Entities.dll.config
+C:\Users\Matt\Desktop\comp5348\2011\VideoStore\VideoStore.Entities\VideoStore.Business.Entities\bin\Release\VideoStore.Business.Entities.dll
+C:\Users\Matt\Desktop\comp5348\2011\VideoStore\VideoStore.Entities\VideoStore.Business.Entities\bin\Release\VideoStore.Business.Entities.pdb
+C:\Users\Matt\Desktop\comp5348\2011\VideoStore\VideoStore.Entities\VideoStore.Business.Entities\bin\Release\Common.dll
+C:\Users\Matt\Desktop\comp5348\2011\VideoStore\VideoStore.Entities\VideoStore.Business.Entities\bin\Release\Common.pdb
+C:\Users\Matt\Desktop\comp5348\2011\VideoStore\VideoStore.Entities\VideoStore.Business.Entities\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Matt\Desktop\comp5348\2011\VideoStore\VideoStore.Entities\VideoStore.Business.Entities\obj\Release\VideoStore.Business.Entities.dll
+C:\Users\Matt\Desktop\comp5348\2011\VideoStore\VideoStore.Entities\VideoStore.Business.Entities\obj\Release\VideoStore.Business.Entities.pdb
+E:\2011\rev4\VideoStore\VideoStore.Entities\VideoStore.Business.Entities\bin\Release\VideoStore.Business.Entities.dll.config
+E:\2011\rev4\VideoStore\VideoStore.Entities\VideoStore.Business.Entities\bin\Release\VideoStore.Business.Entities.dll
+E:\2011\rev4\VideoStore\VideoStore.Entities\VideoStore.Business.Entities\bin\Release\VideoStore.Business.Entities.pdb
+E:\2011\rev4\VideoStore\VideoStore.Entities\VideoStore.Business.Entities\bin\Release\Common.dll
+E:\2011\rev4\VideoStore\VideoStore.Entities\VideoStore.Business.Entities\bin\Release\Common.pdb
+E:\2011\rev4\VideoStore\VideoStore.Entities\VideoStore.Business.Entities\obj\Release\ResolveAssemblyReference.cache
+E:\2011\rev4\VideoStore\VideoStore.Entities\VideoStore.Business.Entities\obj\Release\VideoStore.Business.Entities.dll
+E:\2011\rev4\VideoStore\VideoStore.Entities\VideoStore.Business.Entities\obj\Release\VideoStore.Business.Entities.pdb
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.Entities\VideoStore.Business.Entities\bin\Release\VideoStore.Business.Entities.dll.config
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.Entities\VideoStore.Business.Entities\bin\Release\VideoStore.Business.Entities.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.Entities\VideoStore.Business.Entities\bin\Release\VideoStore.Business.Entities.pdb
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.Entities\VideoStore.Business.Entities\bin\Release\Common.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.Entities\VideoStore.Business.Entities\bin\Release\Common.pdb
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.Entities\VideoStore.Business.Entities\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.Entities\VideoStore.Business.Entities\obj\Release\VideoStore.Business.Entities.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.Entities\VideoStore.Business.Entities\obj\Release\VideoStore.Business.Entities.pdb

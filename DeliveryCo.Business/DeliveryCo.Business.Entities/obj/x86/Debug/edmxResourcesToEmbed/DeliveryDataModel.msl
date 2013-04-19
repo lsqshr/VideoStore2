@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DeliveryDataModelStoreContainer" CdmEntityContainer="DeliveryDataModelContainer">
+    <EntitySetMapping Name="DeliveryInfoes">
+      <EntityTypeMapping TypeName="IsTypeOf(DeliveryDataModel.DeliveryInfo)">
+        <MappingFragment StoreEntitySet="DeliveryInfoes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SourceAddress" ColumnName="SourceAddress" />
+          <ScalarProperty Name="DestinationAddress" ColumnName="DestinationAddress" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+          <ScalarProperty Name="DeliveryIdentifier" ColumnName="DeliveryIdentifier" />
+          <ScalarProperty Name="DeliveryNotificationAddress" ColumnName="DeliveryNotificationAddress" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

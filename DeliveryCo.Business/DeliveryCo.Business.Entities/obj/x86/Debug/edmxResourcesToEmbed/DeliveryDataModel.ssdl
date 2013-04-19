@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DeliveryDataModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="DeliveryDataModelStoreContainer">
+    <EntitySet Name="DeliveryInfoes" EntityType="DeliveryDataModel.Store.DeliveryInfoes" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="DeliveryInfoes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SourceAddress" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DestinationAddress" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="OrderNumber" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DeliveryIdentifier" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DeliveryNotificationAddress" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+  </EntityType>
+</Schema>

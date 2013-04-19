@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="DeliveryDataModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="DeliveryDataModelStoreContainer">
+    <EntitySet Name="DeliveryInfoes" EntityType="DeliveryDataModel.Store.DeliveryInfoes" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="DeliveryInfoes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SourceAddress" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DestinationAddress" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="OrderNumber" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DeliveryIdentifier" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DeliveryNotificationAddress" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+  </EntityType>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="DeliveryDataModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+        <EntityContainer Name="DeliveryDataModelContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="DeliveryInfoes" EntityType="DeliveryDataModel.DeliveryInfo" />
+        </EntityContainer>
+        <EntityType Name="DeliveryInfo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="SourceAddress" Nullable="false" />
+          <Property Type="String" Name="DestinationAddress" Nullable="false" />
+          <Property Type="String" Name="OrderNumber" Nullable="false" />
+          <Property Type="Guid" Name="DeliveryIdentifier" Nullable="false" />
+          <Property Type="String" Name="DeliveryNotificationAddress" Nullable="false" />
+          <Property Type="Int32" Name="Status" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DeliveryDataModelStoreContainer" CdmEntityContainer="DeliveryDataModelContainer">
+    <EntitySetMapping Name="DeliveryInfoes">
+      <EntityTypeMapping TypeName="IsTypeOf(DeliveryDataModel.DeliveryInfo)">
+        <MappingFragment StoreEntitySet="DeliveryInfoes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SourceAddress" ColumnName="SourceAddress" />
+          <ScalarProperty Name="DestinationAddress" ColumnName="DestinationAddress" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+          <ScalarProperty Name="DeliveryIdentifier" ColumnName="DeliveryIdentifier" />
+          <ScalarProperty Name="DeliveryNotificationAddress" ColumnName="DeliveryNotificationAddress" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram Name="DeliveryDataModel" >
+        <EntityTypeShape EntityType="DeliveryDataModel.DeliveryInfo" Width="1.5" PointX="4.25" PointY="2.125" Height="2.3648893229166656" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="VideoStoreEntityModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+  <EntityContainer Name="VideoStoreEntityModelContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Customers" EntityType="VideoStoreEntityModel.Customer" />
+    <EntitySet Name="Deliveries" EntityType="VideoStoreEntityModel.Delivery" />
+    <EntitySet Name="Orders" EntityType="VideoStoreEntityModel.Order" />
+    <EntitySet Name="OrderItems" EntityType="VideoStoreEntityModel.OrderItem" />
+    <EntitySet Name="Stocks" EntityType="VideoStoreEntityModel.Stock" />
+    <AssociationSet Name="DeliveryOrder" Association="VideoStoreEntityModel.DeliveryOrder">
+      <End Role="Delivery" EntitySet="Deliveries" />
+      <End Role="Order" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="OrderOrderItem" Association="VideoStoreEntityModel.OrderOrderItem">
+      <End Role="Order" EntitySet="Orders" />
+      <End Role="OrderItem" EntitySet="OrderItems" />
+    </AssociationSet>
+    <AssociationSet Name="CustomerOrder" Association="VideoStoreEntityModel.CustomerOrder">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="Order" EntitySet="Orders" />
+    </AssociationSet>
+    <EntitySet Name="LoginCredentials" EntityType="VideoStoreEntityModel.LoginCredential" />
+    <AssociationSet Name="CustomerLoginCredential" Association="VideoStoreEntityModel.CustomerLoginCredential">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="LoginCredential" EntitySet="LoginCredentials" />
+    </AssociationSet>
+    <EntitySet Name="Media" EntityType="VideoStoreEntityModel.Media" />
+    <AssociationSet Name="OrderItemMedia" Association="VideoStoreEntityModel.OrderItemMedia">
+      <End Role="OrderItem" EntitySet="OrderItems" />
+      <End Role="Media" EntitySet="Media" />
+    </AssociationSet>
+    <AssociationSet Name="MediaStock" Association="VideoStoreEntityModel.MediaStock">
+      <End Role="Media" EntitySet="Media" />
+      <End Role="Stock" EntitySet="Stocks" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" Nullable="false" ConcurrencyMode="None" />
+    <Property Type="String" Name="Address" Nullable="false" ConcurrencyMode="None" />
+    <NavigationProperty Name="Orders" Relationship="VideoStoreEntityModel.CustomerOrder" FromRole="Customer" ToRole="Order" />
+    <NavigationProperty Name="LoginCredential" Relationship="VideoStoreEntityModel.CustomerLoginCredential" FromRole="Customer" ToRole="LoginCredential" />
+    <Property Type="String" Name="Email" Nullable="false" ConcurrencyMode="None" />
+    <Property Type="Binary" Name="Revision" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="Delivery">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="DateTime" Name="DeliveryDate" Nullable="false" />
+    <Property Type="String" Name="Status" Nullable="false" />
+    <Property Type="String" Name="Warehouse" Nullable="false" />
+    <NavigationProperty Name="Orders" Relationship="VideoStoreEntityModel.DeliveryOrder" FromRole="Delivery" ToRole="Order" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Double" Name="Total" Nullable="true" />
+    <Property Type="DateTime" Name="OrderDate" Nullable="false" />
+    <Property Type="String" Name="Warehouse" Nullable="true" />
+    <Property Type="String" Name="Store" Nullable="true" />
+    <Property Type="Int32" Name="Status" Nullable="false" />
+    <NavigationProperty Name="OrderItems" Relationship="VideoStoreEntityModel.OrderOrderItem" FromRole="Order" ToRole="OrderItem" />
+    <NavigationProperty Name="Customer" Relationship="VideoStoreEntityModel.CustomerOrder" FromRole="Order" ToRole="Customer" />
+  </EntityType>
+  <EntityType Name="OrderItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="Quantity" Nullable="false" />
+    <NavigationProperty Name="Media" Relationship="VideoStoreEntityModel.OrderItemMedia" FromRole="OrderItem" ToRole="Media" />
+  </EntityType>
+  <EntityType Name="Stock">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Guid" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="None" />
+    <Property Type="String" Name="Warehouse" Nullable="false" />
+    <Property Type="Int32" Name="Holding" Nullable="true" />
+    <NavigationProperty Name="Media" Relationship="VideoStoreEntityModel.MediaStock" FromRole="Stock" ToRole="Media" />
+  </EntityType>
+  <Association Name="DeliveryOrder">
+    <End Type="VideoStoreEntityModel.Delivery" Role="Delivery" Multiplicity="0..1" />
+    <End Type="VideoStoreEntityModel.Order" Role="Order" Multiplicity="*" />
+  </Association>
+  <Association Name="OrderOrderItem">
+    <End Type="VideoStoreEntityModel.Order" Role="Order" Multiplicity="1" />
+    <End Type="VideoStoreEntityModel.OrderItem" Role="OrderItem" Multiplicity="*" />
+  </Association>
+  <Association Name="CustomerOrder">
+    <End Type="VideoStoreEntityModel.Customer" Role="Customer" Multiplicity="1" />
+    <End Type="VideoStoreEntityModel.Order" Role="Order" Multiplicity="*" />
+  </Association>
+  <EntityType Name="LoginCredential">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="UserName" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="EncryptedPassword" Nullable="false" cg:SetterAccess="Public" cg:GetterAccess="Public" />
+  </EntityType>
+  <Association Name="CustomerLoginCredential">
+    <End Type="VideoStoreEntityModel.Customer" Role="Customer" Multiplicity="0..1" />
+    <End Type="VideoStoreEntityModel.LoginCredential" Role="LoginCredential" Multiplicity="1" />
+  </Association>
+  <EntityType Name="Media">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Title" Nullable="false" />
+    <Property Type="String" Name="Director" Nullable="false" />
+    <Property Type="String" Name="Genre" Nullable="false" />
+    <Property Type="Decimal" Name="Price" Nullable="false" />
+  </EntityType>
+  <Association Name="OrderItemMedia">
+    <End Type="VideoStoreEntityModel.OrderItem" Role="OrderItem" Multiplicity="*" />
+    <End Type="VideoStoreEntityModel.Media" Role="Media" Multiplicity="1" />
+  </Association>
+  <Association Name="MediaStock">
+    <End Type="VideoStoreEntityModel.Media" Role="Media" Multiplicity="1" />
+    <End Type="VideoStoreEntityModel.Stock" Role="Stock" Multiplicity="0..1" />
+  </Association>
+</Schema>

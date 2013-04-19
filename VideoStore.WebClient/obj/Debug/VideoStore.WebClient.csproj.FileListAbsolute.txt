@@ -1,0 +1,222 @@
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.WebClient\bin\VideoStore.WebClient.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.WebClient\bin\VideoStore.WebClient.pdb
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.WebClient\bin\Common.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.WebClient\bin\Microsoft.Practices.ObjectBuilder2.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.WebClient\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.WebClient\bin\Microsoft.Practices.Unity.Configuration.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.WebClient\bin\Microsoft.Practices.Unity.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.WebClient\bin\Microsoft.Practices.Unity.ServiceLocatorAdapter.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.WebClient\bin\Microsoft.Practices.Unity.StaticFactory.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.WebClient\bin\VideoStore.Business.Entities.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.WebClient\bin\Common.pdb
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.WebClient\bin\VideoStore.Business.Entities.pdb
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.WebClient\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.WebClient\obj\Debug\VideoStore.WebClient.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.WebClient\obj\Debug\VideoStore.WebClient.pdb
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.WebClient\bin\Microsoft.CSharp.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.WebClient\bin\System.ComponentModel.DataAnnotations.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.WebClient\bin\System.Configuration.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.WebClient\bin\System.Data.DataSetExtensions.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.WebClient\bin\System.Data.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.WebClient\bin\System.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.WebClient\bin\System.Drawing.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.WebClient\bin\System.EnterpriseServices.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.WebClient\bin\System.Runtime.Serialization.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.WebClient\bin\System.ServiceModel.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.WebClient\bin\System.Web.Abstractions.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.WebClient\bin\System.Web.ApplicationServices.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.WebClient\bin\System.Web.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.WebClient\bin\System.Web.DynamicData.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.WebClient\bin\System.Web.Entity.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.WebClient\bin\System.Web.Extensions.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.WebClient\bin\System.Web.Mvc.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.WebClient\bin\System.Web.Routing.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.WebClient\bin\System.Web.Services.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.WebClient\bin\System.Xml.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.WebClient\bin\System.Xml.Linq.dll
+C:\Documents and Settings\!msla2391\Desktop\VideoStore\VideoStore\VideoStore.WebClient\bin\System.Web.Mvc.xml
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.WebClient\bin\VideoStore.WebClient.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.WebClient\bin\VideoStore.WebClient.pdb
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.WebClient\bin\Common.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.WebClient\bin\Microsoft.CSharp.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.WebClient\bin\Microsoft.Practices.ObjectBuilder2.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.WebClient\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.WebClient\bin\Microsoft.Practices.Unity.Configuration.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.WebClient\bin\Microsoft.Practices.Unity.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.WebClient\bin\Microsoft.Practices.Unity.ServiceLocatorAdapter.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.WebClient\bin\Microsoft.Practices.Unity.StaticFactory.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.WebClient\bin\System.ComponentModel.DataAnnotations.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.WebClient\bin\System.Configuration.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.WebClient\bin\System.Data.DataSetExtensions.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.WebClient\bin\System.Data.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.WebClient\bin\System.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.WebClient\bin\System.Drawing.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.WebClient\bin\System.EnterpriseServices.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.WebClient\bin\System.Runtime.Serialization.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.WebClient\bin\System.ServiceModel.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.WebClient\bin\System.Web.Abstractions.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.WebClient\bin\System.Web.ApplicationServices.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.WebClient\bin\System.Web.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.WebClient\bin\System.Web.DynamicData.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.WebClient\bin\System.Web.Entity.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.WebClient\bin\System.Web.Extensions.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.WebClient\bin\System.Web.Mvc.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.WebClient\bin\System.Web.Routing.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.WebClient\bin\System.Web.Services.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.WebClient\bin\System.Xml.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.WebClient\bin\System.Xml.Linq.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.WebClient\bin\VideoStore.Business.Entities.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.WebClient\bin\Common.pdb
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.WebClient\bin\VideoStore.Business.Entities.pdb
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.WebClient\bin\System.Web.Mvc.xml
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.WebClient\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.WebClient\obj\Debug\VideoStore.WebClient.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week1\VideoStore\VideoStore\VideoStore.WebClient\obj\Debug\VideoStore.WebClient.pdb
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.WebClient\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.WebClient\obj\Debug\VideoStore.WebClient.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.WebClient\obj\Debug\VideoStore.WebClient.pdb
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.WebClient\bin\VideoStore.WebClient.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.WebClient\bin\VideoStore.WebClient.pdb
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.WebClient\bin\Common.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.WebClient\bin\Microsoft.CSharp.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.WebClient\bin\Microsoft.Practices.ObjectBuilder2.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.WebClient\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.WebClient\bin\Microsoft.Practices.Unity.Configuration.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.WebClient\bin\Microsoft.Practices.Unity.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.WebClient\bin\Microsoft.Practices.Unity.ServiceLocatorAdapter.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.WebClient\bin\Microsoft.Practices.Unity.StaticFactory.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.WebClient\bin\System.ComponentModel.DataAnnotations.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.WebClient\bin\System.Configuration.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.WebClient\bin\System.Data.DataSetExtensions.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.WebClient\bin\System.Data.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.WebClient\bin\System.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.WebClient\bin\System.Drawing.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.WebClient\bin\System.EnterpriseServices.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.WebClient\bin\System.Runtime.Serialization.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.WebClient\bin\System.ServiceModel.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.WebClient\bin\System.Web.Abstractions.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.WebClient\bin\System.Web.ApplicationServices.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.WebClient\bin\System.Web.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.WebClient\bin\System.Web.DynamicData.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.WebClient\bin\System.Web.Entity.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.WebClient\bin\System.Web.Extensions.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.WebClient\bin\System.Web.Mvc.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.WebClient\bin\System.Web.Routing.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.WebClient\bin\System.Web.Services.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.WebClient\bin\System.Xml.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.WebClient\bin\System.Xml.Linq.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.WebClient\bin\VideoStore.Business.Entities.dll
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.WebClient\bin\Common.pdb
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.WebClient\bin\VideoStore.Business.Entities.pdb
+C:\Documents and Settings\!msla2391\Desktop\comp5348\week3\VideoStore\VideoStore.WebClient\bin\System.Web.Mvc.xml
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.WebClient\bin\VideoStore.WebClient.dll
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.WebClient\bin\VideoStore.WebClient.pdb
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.WebClient\bin\Common.dll
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.WebClient\bin\Microsoft.CSharp.dll
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.WebClient\bin\Microsoft.Practices.ObjectBuilder2.dll
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.WebClient\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.WebClient\bin\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.WebClient\bin\Microsoft.Practices.Unity.dll
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.WebClient\bin\Microsoft.Practices.Unity.ServiceLocatorAdapter.dll
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.WebClient\bin\Microsoft.Practices.Unity.StaticFactory.dll
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.WebClient\bin\System.ComponentModel.DataAnnotations.dll
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.WebClient\bin\System.Configuration.dll
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.WebClient\bin\System.Data.DataSetExtensions.dll
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.WebClient\bin\System.Data.dll
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.WebClient\bin\System.dll
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.WebClient\bin\System.Drawing.dll
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.WebClient\bin\System.EnterpriseServices.dll
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.WebClient\bin\System.Runtime.Serialization.dll
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.WebClient\bin\System.ServiceModel.dll
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.WebClient\bin\System.Web.Abstractions.dll
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.WebClient\bin\System.Web.ApplicationServices.dll
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.WebClient\bin\System.Web.dll
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.WebClient\bin\System.Web.DynamicData.dll
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.WebClient\bin\System.Web.Entity.dll
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.WebClient\bin\System.Web.Extensions.dll
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.WebClient\bin\System.Web.Mvc.dll
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.WebClient\bin\System.Web.Routing.dll
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.WebClient\bin\System.Web.Services.dll
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.WebClient\bin\System.Xml.dll
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.WebClient\bin\System.Xml.Linq.dll
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.WebClient\bin\VideoStore.Business.Entities.dll
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.WebClient\bin\Common.pdb
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.WebClient\bin\VideoStore.Business.Entities.pdb
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.WebClient\bin\System.Web.Mvc.xml
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.WebClient\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.WebClient\obj\Debug\VideoStore.WebClient.dll
+C:\Users\Matt\Desktop\PracTaskB\VideoStore.WebClient\obj\Debug\VideoStore.WebClient.pdb
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.WebClient\bin\VideoStore.WebClient.dll
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.WebClient\bin\VideoStore.WebClient.pdb
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.WebClient\bin\Common.dll
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.WebClient\bin\Microsoft.CSharp.dll
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.WebClient\bin\Microsoft.Practices.ObjectBuilder2.dll
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.WebClient\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.WebClient\bin\Microsoft.Practices.Unity.Configuration.dll
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.WebClient\bin\Microsoft.Practices.Unity.dll
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.WebClient\bin\Microsoft.Practices.Unity.ServiceLocatorAdapter.dll
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.WebClient\bin\Microsoft.Practices.Unity.StaticFactory.dll
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.WebClient\bin\System.ComponentModel.DataAnnotations.dll
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.WebClient\bin\System.Configuration.dll
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.WebClient\bin\System.Data.DataSetExtensions.dll
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.WebClient\bin\System.Data.dll
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.WebClient\bin\System.dll
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.WebClient\bin\System.Drawing.dll
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.WebClient\bin\System.EnterpriseServices.dll
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.WebClient\bin\System.Runtime.Serialization.dll
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.WebClient\bin\System.ServiceModel.dll
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.WebClient\bin\System.Web.Abstractions.dll
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.WebClient\bin\System.Web.ApplicationServices.dll
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.WebClient\bin\System.Web.dll
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.WebClient\bin\System.Web.DynamicData.dll
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.WebClient\bin\System.Web.Entity.dll
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.WebClient\bin\System.Web.Extensions.dll
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.WebClient\bin\System.Web.Mvc.dll
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.WebClient\bin\System.Web.Routing.dll
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.WebClient\bin\System.Web.Services.dll
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.WebClient\bin\System.Xml.dll
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.WebClient\bin\System.Xml.Linq.dll
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.WebClient\bin\VideoStore.Business.Entities.dll
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.WebClient\bin\Common.pdb
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.WebClient\bin\VideoStore.Business.Entities.pdb
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.WebClient\bin\System.Web.Mvc.xml
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.WebClient\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.WebClient\obj\Debug\VideoStore.WebClient.dll
+C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\VideoStore.WebClient\obj\Debug\VideoStore.WebClient.pdb
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.WebClient\bin\VideoStore.WebClient.dll
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.WebClient\bin\VideoStore.WebClient.pdb
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.WebClient\bin\Common.dll
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.WebClient\bin\Microsoft.CSharp.dll
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.WebClient\bin\Microsoft.Practices.ObjectBuilder2.dll
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.WebClient\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.WebClient\bin\Microsoft.Practices.Unity.Configuration.dll
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.WebClient\bin\Microsoft.Practices.Unity.dll
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.WebClient\bin\Microsoft.Practices.Unity.ServiceLocatorAdapter.dll
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.WebClient\bin\Microsoft.Practices.Unity.StaticFactory.dll
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.WebClient\bin\System.ComponentModel.DataAnnotations.dll
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.WebClient\bin\System.Configuration.dll
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.WebClient\bin\System.Data.DataSetExtensions.dll
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.WebClient\bin\System.Data.dll
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.WebClient\bin\System.dll
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.WebClient\bin\System.Drawing.dll
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.WebClient\bin\System.EnterpriseServices.dll
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.WebClient\bin\System.Runtime.Serialization.dll
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.WebClient\bin\System.ServiceModel.dll
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.WebClient\bin\System.Web.Abstractions.dll
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.WebClient\bin\System.Web.ApplicationServices.dll
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.WebClient\bin\System.Web.dll
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.WebClient\bin\System.Web.DynamicData.dll
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.WebClient\bin\System.Web.Entity.dll
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.WebClient\bin\System.Web.Extensions.dll
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.WebClient\bin\System.Web.Mvc.dll
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.WebClient\bin\System.Web.Routing.dll
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.WebClient\bin\System.Web.Services.dll
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.WebClient\bin\System.Xml.dll
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.WebClient\bin\System.Xml.Linq.dll
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.WebClient\bin\VideoStore.Business.Entities.dll
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.WebClient\bin\Common.pdb
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.WebClient\bin\VideoStore.Business.Entities.pdb
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.WebClient\bin\System.Web.Mvc.xml
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.WebClient\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.WebClient\obj\Debug\VideoStore.WebClient.dll
+C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\VideoStore.WebClient\obj\Debug\VideoStore.WebClient.pdb

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c2212584-caf5-4719-b3b8-197d2d23f05a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="net.tcp://localhost:8021/CustomerService/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="500121c2-deec-4002-9384-a9ce33f5a0a3" SourceId="1" SourceUrl="net.tcp://localhost:8021/CustomerService/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="ce5757bb-a577-41e0-a04a-4559227cd1b6" SourceId="1" SourceUrl="net.tcp://localhost:8021/CustomerService/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="620a759e-e029-4eaa-9491-849696e139b3" SourceId="1" SourceUrl="net.tcp://localhost:8021/CustomerService/mex" />
+    <MetadataFile FileName="VideoStore.Business.Entities.xsd" MetadataType="Schema" ID="b506afd6-e316-42ae-bac6-f83cfee6f065" SourceId="1" SourceUrl="net.tcp://localhost:8021/CustomerService/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

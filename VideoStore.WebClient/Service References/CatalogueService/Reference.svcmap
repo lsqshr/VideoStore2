@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d0ff8f6d-6a92-4d70-99c3-2e4a46979d84" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="net.tcp://localhost:9010/CatalogueService/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="ee964933-f48f-4e64-848c-d86e2355a6fc" SourceId="1" SourceUrl="net.tcp://localhost:9010/CatalogueService/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="18f0e3d0-31f7-418b-bb3c-146c9934e384" SourceId="1" SourceUrl="net.tcp://localhost:9010/CatalogueService/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="563fc717-fabd-411d-a2a3-68e306fdd15e" SourceId="1" SourceUrl="net.tcp://localhost:9010/CatalogueService/mex" />
+    <MetadataFile FileName="VideoStore.Business.Entities.xsd" MetadataType="Schema" ID="654d0ed1-ecbc-48a3-b5c7-1fc22f5c7193" SourceId="1" SourceUrl="net.tcp://localhost:9010/CatalogueService/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
