@@ -27,12 +27,16 @@ namespace VideoStore.Business.Components
                 {
                     pOrder.OrderNumber = Guid.NewGuid();
                     TransferFundsFromCustomer(pOrder.Customer.BankAccountNumber, pOrder.Total ?? 0.0);
+                    Console.WriteLine("Bank Done");
                     PlaceDeliveryForOrder(pOrder);
+                    Console.WriteLine("Delivery Done");
                     lContainer.Orders.ApplyChanges(pOrder);
                     pOrder.UpdateStockLevels();
                     lContainer.SaveChanges();
                     lScope.Complete();
+                    Console.WriteLine("order transaction finishes");
                     SendOrderPlacedConfirmation(pOrder);
+                    Console.WriteLine("Order confirmation sent");
                 }
                 catch (Exception lException)
                 {

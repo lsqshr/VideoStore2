@@ -38,6 +38,7 @@ namespace DeliveryCo.Business.Components
                 pDeliveryInfo.Status = 1;
                 IDeliveryNotificationService lService = DeliveryNotificationServiceFactory.GetDeliveryNotificationService(pDeliveryInfo.DeliveryNotificationAddress);
                 lService.NotifyDeliveryCompletion(pDeliveryInfo.DeliveryIdentifier, DeliveryInfoStatus.Delivered);
+                Console.WriteLine("after delivery notified.");
             }
 
         }

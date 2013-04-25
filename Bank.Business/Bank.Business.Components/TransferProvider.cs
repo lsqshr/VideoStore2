@@ -21,6 +21,7 @@ namespace Bank.Business.Components
                 //IOperationOutcomeService lOutcomeService = OperationOutcomeServiceFactory.GetOperationOutcomeService(pResultReturnAddress);
                 try
                 {
+                    Console.WriteLine("Trying to make a new transaction.");
                     Account lFromAcct = GetAccountFromNumber(pFromAcctNumber);
                     Account lToAcct = GetAccountFromNumber(pToAcctNumber);
                     lFromAcct.Withdraw(pAmount);
@@ -31,6 +32,7 @@ namespace Bank.Business.Components
                     lContainer.ObjectStateManager.ChangeObjectState(lToAcct, System.Data.EntityState.Modified);
                     lContainer.SaveChanges();
                     lScope.Complete();
+                    Console.WriteLine("Transfer Transaction Done");
                     //lOutcomeService.NotifyOperationOutcome(new OperationOutcome() { Outcome = OperationOutcome.OperationOutcomeResult.Successful });
                 }
                 catch (Exception lException)
