@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="CatalogueService.cs" />
     <Compile Include="DeliveryNotificationService.cs" />
+    <Compile Include="NotifyService.cs" />
     <Compile Include="RoleService.cs" />
     <Compile Include="UserService.cs" />
     <Compile Include="OrderService.cs" />

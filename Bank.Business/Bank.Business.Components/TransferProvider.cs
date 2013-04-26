@@ -11,14 +11,12 @@ namespace Bank.Business.Components
 {
     public class TransferProvider : ITransferProvider
     {
-
-
-        public void Transfer(double pAmount, int pFromAcctNumber, int pToAcctNumber)
-        {
+        public void Transfer(Guid OrderNumber,double pAmount, int pFromAcctNumber, int pToAcctNumber, String pResultReturnAddress)
+            {
             using (TransactionScope lScope = new TransactionScope())
             using (BankEntityModelContainer lContainer = new BankEntityModelContainer())
             {
-                //IOperationOutcomeService lOutcomeService = OperationOutcomeServiceFactory.GetOperationOutcomeService(pResultReturnAddress);
+                INotifyService lOutcomeService = OperationOutcomeServiceFactory.GetOperationOutcomeService(pResultReturnAddress);
                 try
                 {
                     Console.WriteLine("Trying to make a new transaction.");
@@ -31,15 +29,21 @@ namespace Bank.Business.Components
                     lContainer.ObjectStateManager.ChangeObjectState(lFromAcct, System.Data.EntityState.Modified);
                     lContainer.ObjectStateManager.ChangeObjectState(lToAcct, System.Data.EntityState.Modified);
                     lContainer.SaveChanges();
-                    lScope.Complete();
                     Console.WriteLine("Transfer Transaction Done");
-                    //lOutcomeService.NotifyOperationOutcome(new OperationOutcome() { Outcome = OperationOutcome.OperationOutcomeResult.Successful });
+                    lOutcomeService.NotifyOperationOutcome(OrderNumber, DeliveryInfoStatus.Successful, "Success");
+                    Console.WriteLine("successful message sent!"+OrderNumber.ToString());
+                    lScope.Complete();
                 }
                 catch (Exception lException)
                 {
+                    
                     Console.WriteLine("Error occured while transferring money:  " + lException.Message);
-                    throw;
-                    //lOutcomeService.NotifyOperationOutcome(new OperationOutcome() { Outcome = OperationOutcome.OperationOutcomeResult.Failure, Message = lException.Message });
+                    lOutcomeService.NotifyOperationOutcome(OrderNumber, DeliveryInfoStatus.Failed, 
+                        "Error occured while transferring money:  " + lException.Message);
+                    Console.WriteLine("fail messsage sent!"+OrderNumber.ToString());
+                    lScope.Complete();
+                    lScope.Dispose();      
+                    //throw;
                 }
             }
         }
@@ -51,5 +55,7 @@ namespace Bank.Business.Components
                 return lContainer.Accounts.Where((pAcct) => (pAcct.AccountNumber == pToAcctNumber)).FirstOrDefault();
             }
         }
+
+
     }
 }

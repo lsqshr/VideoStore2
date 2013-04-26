@@ -124,8 +124,8 @@
         <EntityTypeShape EntityType="BankEntityModel.Customer" Width="1.5" PointX="3.125" PointY="1.75" Height="1.211080729166667" />
         <EntityTypeShape EntityType="BankEntityModel.Account" Width="1.5" PointX="5.5" PointY="1.75" Height="1.787985026041667" />
         <AssociationConnector Association="BankEntityModel.CustomerAccount">
-          <ConnectorPoint PointX="4.625" PointY="2.4516910807291667" />
-          <ConnectorPoint PointX="5.5" PointY="2.4516910807291667" />
+          <ConnectorPoint PointX="4.625" PointY="2.3818058268229167" />
+          <ConnectorPoint PointX="5.5" PointY="2.3818058268229167" />
         </AssociationConnector>
       </Diagram>
     </edmx:Diagrams>

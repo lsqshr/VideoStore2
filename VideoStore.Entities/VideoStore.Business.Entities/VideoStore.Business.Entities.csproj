@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TransferOutcome.cs" />
     <Compile Include="Delivery.cs">
       <DependentUpon>VideoEntityModel.tt</DependentUpon>
     </Compile>

@@ -34,6 +34,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
@@ -45,6 +46,11 @@
   <ItemGroup>
     <Compile Include="OperationOutcomeServiceFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\NotifyService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="TransferProvider.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -60,6 +66,37 @@
       <Project>{4BB64DAE-6F81-4E3D-A2BD-41075F28F15F}</Project>
       <Name>Bank.Business.Entities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Service References\NotifyService\service.wsdl" />
+    <None Include="Service References\NotifyService\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\NotifyService\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\NotifyService\VideoStore.Business.Entities.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\NotifyService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\NotifyService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\NotifyService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\NotifyService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

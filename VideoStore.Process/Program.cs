@@ -15,17 +15,28 @@ using Microsoft.Practices.Unity.Configuration;
 using VideoStore.Business.Entities;
 using System.Transactions;
 using System.ServiceModel.Description;
+using System.Messaging;
 using VideoStore.Business.Components.Interfaces;
 
 namespace VideoStore.Process
 {
     public class Program
     {
+        private static readonly String sNotifyQueuePath = ".\\private$\\NotifyService";
+
         static void Main(string[] args)
         {
+            EnsureMessageQueuesExists();
             ResolveDependencies();
             InsertDummyEntities();
             HostServices();
+        }
+
+        private static void EnsureMessageQueuesExists()
+        {
+            // Create the transacted MSMQ queue if necessary.
+            if (!MessageQueue.Exists(sNotifyQueuePath))
+                MessageQueue.Create(sNotifyQueuePath, true);
         }
 
         private static void InsertDummyEntities()

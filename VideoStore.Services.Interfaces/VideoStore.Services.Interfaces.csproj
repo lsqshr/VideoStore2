@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ICatalogueService.cs" />
+    <Compile Include="INotifyService.cs" />
     <Compile Include="IRoleService.cs" />
     <Compile Include="IUserService.cs" />
     <Compile Include="IOrderService.cs" />

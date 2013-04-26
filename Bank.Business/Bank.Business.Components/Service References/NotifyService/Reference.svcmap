@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e2491a22-332f-4659-a647-6b4665920404" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="net.tcp://localhost:9010/NotifyService/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="95f6cc1a-3e65-4749-830b-548bcac89307" SourceId="1" SourceUrl="net.tcp://localhost:9010/NotifyService/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="10c124e6-1d5f-4166-a7b4-4bf581802a13" SourceId="1" SourceUrl="net.tcp://localhost:9010/NotifyService/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="e0ccd761-0db9-479c-bd7d-2667e01222d9" SourceId="1" SourceUrl="net.tcp://localhost:9010/NotifyService/mex" />
+    <MetadataFile FileName="VideoStore.Business.Entities.xsd" MetadataType="Schema" ID="6069562e-a659-4ce4-860c-4709bd353305" SourceId="1" SourceUrl="net.tcp://localhost:9010/NotifyService/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -16,12 +16,3 @@ C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\EmailSe
 C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\EmailService.Services\EmailService.Services\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\EmailService.Services\EmailService.Services\obj\x86\Debug\EmailService.Services.dll
 C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\EmailService.Services\EmailService.Services\obj\x86\Debug\EmailService.Services.pdb
-C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\EmailService.Services\EmailService.Services\bin\Debug\EmailService.Services.dll
-C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\EmailService.Services\EmailService.Services\bin\Debug\EmailService.Services.pdb
-C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\EmailService.Services\EmailService.Services\bin\Debug\EmailService.Business.Entities.exe
-C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\EmailService.Services\EmailService.Services\bin\Debug\EmailService.Services.Interfaces.dll
-C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\EmailService.Services\EmailService.Services\bin\Debug\EmailService.Business.Entities.pdb
-C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\EmailService.Services\EmailService.Services\bin\Debug\EmailService.Services.Interfaces.pdb
-C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\EmailService.Services\EmailService.Services\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\EmailService.Services\EmailService.Services\obj\x86\Debug\EmailService.Services.dll
-C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\EmailService.Services\EmailService.Services\obj\x86\Debug\EmailService.Services.pdb

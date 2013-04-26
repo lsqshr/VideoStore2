@@ -10,7 +10,7 @@ namespace Bank.Services.Interfaces
     public interface ITransferService
     {
         [OperationContract(IsOneWay=true)]
-        [TransactionFlow(TransactionFlowOption.Allowed)]
-        void Transfer(double pAmount, int pFromAcctNumber, int pToAcctNumber);
+        //[TransactionFlow(TransactionFlowOption.Allowed)]
+        void Transfer(Guid OrderNumber,double pAmount, int pFromAcctNumber, int pToAcctNumber,String pReturnAddress);
     }
 }

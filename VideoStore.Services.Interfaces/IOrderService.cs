@@ -5,12 +5,13 @@ using System.Text;
 using VideoStore.Business.Entities;
 using System.ServiceModel;
 
+
 namespace VideoStore.Services.Interfaces
 {
     [ServiceContract]
     public interface IOrderService
     {
         [OperationContract]
-        void SubmitOrder(Order pOrder);
+        void SubmitOrder(Order pOrder);      
     }
 }

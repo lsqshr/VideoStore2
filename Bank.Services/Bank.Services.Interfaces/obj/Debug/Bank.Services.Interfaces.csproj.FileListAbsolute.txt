@@ -12,10 +12,3 @@ C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\Bank.Se
 C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\Bank.Services\Bank.Services.Interfaces\obj\Debug\ResolveAssemblyReference.cache
 C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\Bank.Services\Bank.Services.Interfaces\obj\Debug\Bank.Services.Interfaces.dll
 C:\Documents and Settings\msla2391\Desktop\group project\GroupProject(1)\Bank.Services\Bank.Services.Interfaces\obj\Debug\Bank.Services.Interfaces.pdb
-C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\Bank.Services\Bank.Services.Interfaces\bin\Debug\Bank.Services.Interfaces.dll
-C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\Bank.Services\Bank.Services.Interfaces\bin\Debug\Bank.Services.Interfaces.pdb
-C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\Bank.Services\Bank.Services.Interfaces\bin\Debug\Bank.Business.Entities.dll
-C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\Bank.Services\Bank.Services.Interfaces\bin\Debug\Bank.Business.Entities.pdb
-C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\Bank.Services\Bank.Services.Interfaces\obj\Debug\ResolveAssemblyReference.cache
-C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\Bank.Services\Bank.Services.Interfaces\obj\Debug\Bank.Services.Interfaces.dll
-C:\Documents and Settings\Marshall\My Documents\Dropbox\GroupProject\Bank.Services\Bank.Services.Interfaces\obj\Debug\Bank.Services.Interfaces.pdb

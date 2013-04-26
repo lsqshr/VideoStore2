@@ -20,15 +20,15 @@ namespace VideoStore.Business.Components
 
         public void SubmitOrder(Entities.Order pOrder)
         {
-            using (TransactionScope lScope = new TransactionScope())
+            //using (TransactionScope lScope = new TransactionScope())
             using (VideoStoreEntityModelContainer lContainer = new VideoStoreEntityModelContainer())
             {
                 try
                 {
                     pOrder.OrderNumber = Guid.NewGuid();
-                    TransferFundsFromCustomer(pOrder.Customer.BankAccountNumber, pOrder.Total ?? 0.0);
+                    TransferFundsFromCustomer(pOrder.OrderNumber,pOrder.Customer.BankAccountNumber, pOrder.Total ?? 0.0);
                     Console.WriteLine("Bank Done");
-                    PlaceDeliveryForOrder(pOrder);
+                    /*PlaceDeliveryForOrder(pOrder);
                     Console.WriteLine("Delivery Done");
                     lContainer.Orders.ApplyChanges(pOrder);
                     pOrder.UpdateStockLevels();
@@ -36,11 +36,13 @@ namespace VideoStore.Business.Components
                     lScope.Complete();
                     Console.WriteLine("order transaction finishes");
                     SendOrderPlacedConfirmation(pOrder);
-                    Console.WriteLine("Order confirmation sent");
+                    Console.WriteLine("Order confirmation sent");*/
                 }
                 catch (Exception lException)
                 {
-                    SendOrderErrorMessage(pOrder, lException);
+                    //SendOrderErrorMessage(pOrder, lException);
+                    Console.WriteLine("Transer Message Failed");
+                    Console.WriteLine(lException.Message);
                     throw;
                 }
             }
@@ -81,10 +83,14 @@ namespace VideoStore.Business.Components
             
         }
 
-        private void TransferFundsFromCustomer(int pCustomerAccountNumber, double pTotal)
+        private void TransferFundsFromCustomer(Guid OrderNumber,int pCustomerAccountNumber, double pTotal)
         {
-            TransferServiceClient lClient = new TransferServiceClient();
-            lClient.Transfer(pTotal, pCustomerAccountNumber, RetrieveVideoStoreAccountNumber());
+            using (TransferServiceClient lClient = new TransferServiceClient()){
+                lClient.Transfer(OrderNumber, pTotal, 
+                    pCustomerAccountNumber, RetrieveVideoStoreAccountNumber(),
+                    "net.msmq://localhost/private/NotifyService");
+                Console.WriteLine("new transfer message sent" + OrderNumber.ToString());
+            }
         }
 
 

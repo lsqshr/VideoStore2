@@ -9,9 +9,10 @@ namespace Bank.Business.Components
 {
     public class OperationOutcomeServiceFactory
     {
-        public static IOperationOutcomeService GetOperationOutcomeService(String pAddress)
+        public static INotifyService GetOperationOutcomeService(String pAddress)
         {
-            ChannelFactory<IOperationOutcomeService> lChannelFactory = new ChannelFactory<IOperationOutcomeService>(new NetTcpBinding(), new EndpointAddress(pAddress));
+            ChannelFactory<INotifyService> lChannelFactory = new ChannelFactory<INotifyService>(new NetMsmqBinding(NetMsmqSecurityMode.None) { Durable = true }, 
+                        new EndpointAddress(pAddress));
             return lChannelFactory.CreateChannel();
         }
     }
