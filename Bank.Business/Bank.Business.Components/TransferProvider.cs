@@ -30,7 +30,8 @@ namespace Bank.Business.Components
                     lContainer.ObjectStateManager.ChangeObjectState(lToAcct, System.Data.EntityState.Modified);
                     lContainer.SaveChanges();
                     Console.WriteLine("Transfer Transaction Done");
-                    lOutcomeService.NotifyOperationOutcome(OrderNumber, DeliveryInfoStatus.Successful, "Success");
+                    lOutcomeService.NotifyOperationOutcome(OrderNumber, 
+                        DeliveryInfoStatus.Successful, "Success");
                     Console.WriteLine("successful message sent!"+OrderNumber.ToString());
                     lScope.Complete();
                 }
@@ -38,7 +39,7 @@ namespace Bank.Business.Components
                 {
                     
                     Console.WriteLine("Error occured while transferring money:  " + lException.Message);
-                    lOutcomeService.NotifyOperationOutcome(OrderNumber, DeliveryInfoStatus.Failed, 
+                    lOutcomeService.NotifyOperationOutcome(OrderNumber, DeliveryInfoStatus.Failed,
                         "Error occured while transferring money:  " + lException.Message);
                     Console.WriteLine("fail messsage sent!"+OrderNumber.ToString());
                     lScope.Complete();

@@ -142,7 +142,7 @@ namespace VideoStore.Business.Components.EmailService {
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="EmailService.IEmailService")]
     public interface IEmailService {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEmailService/SendEmail", ReplyAction="http://tempuri.org/IEmailService/SendEmailResponse")]
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IEmailService/SendEmail")]
         void SendEmail(VideoStore.Business.Components.EmailService.EmailMessage pMessage);
     }
     

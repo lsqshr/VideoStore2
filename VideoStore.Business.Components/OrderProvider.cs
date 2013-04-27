@@ -28,6 +28,8 @@ namespace VideoStore.Business.Components
                     pOrder.OrderNumber = Guid.NewGuid();
                     TransferFundsFromCustomer(pOrder.OrderNumber,pOrder.Customer.BankAccountNumber, pOrder.Total ?? 0.0);
                     Console.WriteLine("Bank Done");
+                    lContainer.Orders.ApplyChanges(pOrder);
+                    lContainer.SaveChanges();
                     /*PlaceDeliveryForOrder(pOrder);
                     Console.WriteLine("Delivery Done");
                     lContainer.Orders.ApplyChanges(pOrder);
@@ -48,13 +50,22 @@ namespace VideoStore.Business.Components
             }
         }
 
-        private void SendOrderErrorMessage(Order pOrder, Exception pException)
+        public void SendOrderErrorMessage(Guid OrderNumber, String Message)
         {
-            EmailProvider.SendMessage(new EmailMessage()
+            using (TransactionScope lScope = new TransactionScope())
+            using (VideoStoreEntityModelContainer lContainer = new VideoStoreEntityModelContainer())
             {
-                ToAddress = pOrder.Customer.Email,
-                Message = "There was an error in processsing your order " + pOrder.OrderNumber + ": "+ pException.Message +". Please contact Video Store"
-            });
+                Order pOrder = lContainer.Orders.Include("Customer").FirstOrDefault((tOrder) => tOrder.OrderNumber == OrderNumber); 
+                
+                EmailProvider.SendMessage(new EmailMessage()
+                {
+                    ToAddress = pOrder.Customer.Email,
+                    Message = "There was an error in processsing your order " + pOrder.OrderNumber + ": " + Message + ". Please contact Video Store"
+                });
+                lScope.Complete();
+ 
+            }
+
         }
 
         private void SendOrderPlacedConfirmation(Order pOrder)

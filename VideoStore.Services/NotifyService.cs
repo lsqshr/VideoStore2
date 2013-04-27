@@ -3,15 +3,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using VideoStore.Services.Interfaces;
+using VideoStore.Business.Components;
+using VideoStore.Business.Components.Interfaces;
+using Microsoft.Practices.ServiceLocation;
 
 namespace VideoStore.Services
 {
 
     class NotifyService : INotifyService
     {
-        public void NotifyOperationOutcome(Guid OrderId , DeliveryInfoStatus Status , String Message) {
+        public IOrderProvider OrderProvider
+        {
+            get { return ServiceLocator.Current.GetInstance<IOrderProvider>(); }
+        }
+
+        public void NotifyOperationOutcome(Guid OrderNumber , DeliveryInfoStatus Status , String Message) {
             Console.WriteLine("result received: Order Id " + 
-                        OrderId.ToString() + Status.ToString() + "\nmsg: " +Message);
+                        OrderNumber.ToString() + Status.ToString() + "\nmsg: " +Message);
+            if (Status == DeliveryInfoStatus.Failed)
+            {
+                OrderProvider.SendOrderErrorMessage(OrderNumber,Message);
+            }
         }
     }
 }
