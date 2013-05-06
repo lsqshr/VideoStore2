@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using DeliveryCo.Services.Interfaces;
 using System.ServiceModel;
+using System.ServiceModel.Channels;
 
 namespace DeliveryCo.Business.Components
 {
@@ -11,8 +12,23 @@ namespace DeliveryCo.Business.Components
     {
         public static IDeliveryNotificationService GetDeliveryNotificationService(String pAddress)
         {
-            ChannelFactory<IDeliveryNotificationService> lChannelFactory = new ChannelFactory<IDeliveryNotificationService>(new NetTcpBinding(), new EndpointAddress(pAddress));
-            return lChannelFactory.CreateChannel();
+            Binding lBinding;
+            if (pAddress.Contains("net.tcp"))
+            {
+                lBinding = new NetTcpBinding();
+            }
+            else if (pAddress.Contains("net.msmq"))
+            {
+                lBinding = new NetMsmqBinding(NetMsmqSecurityMode.None) { Durable = true };
+            }
+            else
+            {
+                throw new Exception("Unrecognized address type");
+            }
+            EndpointAddress myEndpoint = new EndpointAddress(pAddress);
+            ChannelFactory<IDeliveryNotificationService> myChannelFactory = new ChannelFactory<IDeliveryNotificationService>(lBinding, myEndpoint);
+            return myChannelFactory.CreateChannel();
+
         }
     }
 }

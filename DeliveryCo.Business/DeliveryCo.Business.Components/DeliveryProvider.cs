@@ -17,7 +17,7 @@ namespace DeliveryCo.Business.Components
             using(TransactionScope lScope = new TransactionScope())
             using(DeliveryDataModelContainer lContainer = new DeliveryDataModelContainer())
             {
-                pDeliveryInfo.DeliveryIdentifier = Guid.NewGuid();
+                
                 pDeliveryInfo.Status = 0;
                 lContainer.DeliveryInfoes.AddObject(pDeliveryInfo);
                 lContainer.SaveChanges();

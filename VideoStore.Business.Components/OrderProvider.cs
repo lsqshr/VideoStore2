@@ -30,8 +30,8 @@ namespace VideoStore.Business.Components
                     Console.WriteLine("Bank Done");
                     lContainer.Orders.ApplyChanges(pOrder);
                     lContainer.SaveChanges();
-                    /*PlaceDeliveryForOrder(pOrder);
-                    Console.WriteLine("Delivery Done");
+                    PlaceDeliveryForOrder(pOrder);
+                    /*Console.WriteLine("Delivery Done");
                     lContainer.Orders.ApplyChanges(pOrder);
                     pOrder.UpdateStockLevels();
                     lContainer.SaveChanges();
@@ -79,18 +79,20 @@ namespace VideoStore.Business.Components
 
         private void PlaceDeliveryForOrder(Order pOrder)
         {
-            Delivery lDelivery = new Delivery() { DeliveryStatus = DeliveryStatus.Submitted, SourceAddress = "Video Store Address", DestinationAddress = pOrder.Customer.Address, Order = pOrder };
+            Delivery lDelivery = new Delivery() { ExternalDeliveryIdentifier = Guid.NewGuid(), DeliveryStatus = DeliveryStatus.Submitted, SourceAddress = "Video Store Address", DestinationAddress = pOrder.Customer.Address, Order = pOrder };
             DeliveryServiceClient lClient = new DeliveryServiceClient();
-            Guid lDeliveryIdentifier = lClient.SubmitDelivery(new DeliveryInfo()
-            { 
-                OrderNumber = lDelivery.Order.OrderNumber.ToString(),  
+
+            lClient.SubmitDelivery(new DeliveryInfo()
+            {
+                DeliveryIdentifier = lDelivery.ExternalDeliveryIdentifier,
+                OrderNumber = lDelivery.Order.OrderNumber.ToString(),
                 SourceAddress = lDelivery.SourceAddress,
                 DestinationAddress = lDelivery.DestinationAddress,
-                DeliveryNotificationAddress = "net.tcp://localhost:9010/DeliveryNotificationService"
+                DeliveryNotificationAddress = "net.msmq://localhost/private/DeliveryNotificationService"
             });
 
-            lDelivery.ExternalDeliveryIdentifier = lDeliveryIdentifier;
             pOrder.Delivery = lDelivery;
+            
             
         }
 
