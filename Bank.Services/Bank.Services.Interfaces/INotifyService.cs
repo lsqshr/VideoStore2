@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.Serialization;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,13 @@ using System.ServiceModel;
 
 namespace Bank.Services.Interfaces
 {
-    public enum DeliveryInfoStatus { Successful=1, Failed=0 };
+    [DataContract]
+    public enum DeliveryInfoStatus { 
+        [EnumMember]
+        Successful = 1,
+        [EnumMember]
+        Failed = 0 
+    };
 
     [ServiceContract]
     public interface INotifyService

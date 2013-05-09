@@ -20,9 +20,13 @@ namespace VideoStore.Services
         public void NotifyOperationOutcome(Guid OrderNumber , DeliveryInfoStatus Status , String Message) {
             Console.WriteLine("result received: Order Id " + 
                         OrderNumber.ToString() + Status.ToString() + "\nmsg: " +Message);
-            if (Status == DeliveryInfoStatus.Failed)
+            if (Message != "Success")
             {
-                OrderProvider.SendOrderErrorMessage(OrderNumber,Message);
+                OrderProvider.SendOrderErrorMessage(OrderNumber, Message);
+            }
+            else {
+                //trying to start delivery
+                
             }
         }
     }
