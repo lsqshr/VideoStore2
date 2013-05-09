@@ -9,14 +9,19 @@ using Microsoft.Practices.Unity.Configuration;
 using Microsoft.Practices.Unity.ServiceLocatorAdapter;
 using Microsoft.Practices.ServiceLocation;
 using System.Configuration;
+using System.Messaging;
 
 namespace DeliveryCo.Process
 {
     class Program
     {
+        private static readonly String sDeliveryCoQueue = ".\\private$\\DeliveryQ";
+
         static void Main(string[] args)
         {
             ResolveDependencies();
+            EnsureQueueExists();
+            
             using (ServiceHost lHost = new ServiceHost(typeof(DeliveryService)))
             {
                 lHost.Open();
@@ -35,6 +40,13 @@ namespace DeliveryCo.Process
             lSection.Containers["containerOne"].Configure(lContainer);
             UnityServiceLocator locator = new UnityServiceLocator(lContainer);
             ServiceLocator.SetLocatorProvider(() => locator);
+        }
+        // used from lab code (TradeMessageBus)
+        private static void EnsureQueueExists()
+        {
+            // Create the transacted MSMQ queue if necessary.
+            if (!MessageQueue.Exists(sDeliveryCoQueue))
+                MessageQueue.Create(sDeliveryCoQueue, true);
         }
     }
 }
