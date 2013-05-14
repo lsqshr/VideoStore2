@@ -24,7 +24,7 @@ namespace VideoStore.Process
     {
         private static readonly String sDeliveryCoQueue = ".\\private$\\DeliveryNotificationService";
 
-        private static readonly String sNotifyQueuePath = ".\\private$\\NotifyService";
+        private static readonly String sNotifyQueuePath = ".\\private$\\BankNotificationService";
 
         static void Main(string[] args)
         {

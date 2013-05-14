@@ -101,7 +101,7 @@ namespace VideoStore.Business.Components
             using (TransferServiceClient lClient = new TransferServiceClient()){
                 lClient.Transfer(OrderNumber, pTotal, 
                     pCustomerAccountNumber, RetrieveVideoStoreAccountNumber(),
-                    "net.msmq://localhost/private/NotifyService");
+                    "net.msmq://localhost/private/BankNotificationService");
                 Console.WriteLine("new transfer message sent" + OrderNumber.ToString());
             }
         }

@@ -16,7 +16,7 @@ namespace Bank.Business.Components
             using (TransactionScope lScope = new TransactionScope())
             using (BankEntityModelContainer lContainer = new BankEntityModelContainer())
             {
-                INotifyService lOutcomeService = OperationOutcomeServiceFactory.GetOperationOutcomeService(pResultReturnAddress);
+                IBankNotificationService lOutcomeService = OperationOutcomeServiceFactory.GetOperationOutcomeService(pResultReturnAddress);
                 try
                 {
                     Console.WriteLine("Trying to make a new transaction.");
