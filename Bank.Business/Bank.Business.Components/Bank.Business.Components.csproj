@@ -46,7 +46,7 @@
   <ItemGroup>
     <Compile Include="OperationOutcomeServiceFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service References\NotifyService\Reference.cs">
+    <Compile Include="Service References\BankNotificationService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -72,28 +72,28 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="Service References\NotifyService\service.wsdl" />
-    <None Include="Service References\NotifyService\service.xsd">
+    <None Include="Service References\BankNotificationService\service.wsdl" />
+    <None Include="Service References\BankNotificationService\service.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\NotifyService\service1.xsd">
+    <None Include="Service References\BankNotificationService\service1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\NotifyService\VideoStore.Business.Entities.xsd">
+    <None Include="Service References\BankNotificationService\VideoStore.Services.Interfaces.xsd">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Service References\NotifyService\" />
+    <WCFMetadataStorage Include="Service References\BankNotificationService\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\NotifyService\configuration91.svcinfo" />
+    <None Include="Service References\BankNotificationService\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\NotifyService\configuration.svcinfo" />
+    <None Include="Service References\BankNotificationService\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\NotifyService\Reference.svcmap">
+    <None Include="Service References\BankNotificationService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

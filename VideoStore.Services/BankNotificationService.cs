@@ -6,6 +6,7 @@ using VideoStore.Services.Interfaces;
 using VideoStore.Business.Components;
 using VideoStore.Business.Components.Interfaces;
 using Microsoft.Practices.ServiceLocation;
+using VideoStore.Business.Entities;
 
 namespace VideoStore.Services
 {
@@ -19,14 +20,17 @@ namespace VideoStore.Services
 
         public void NotifyOperationOutcome(Guid OrderNumber , DeliveryInfoStatus Status , String Message) {
             Console.WriteLine("result received: Order Id " + 
-                        OrderNumber.ToString() + Status.ToString() + "\nmsg: " +Message);
+                        OrderNumber.ToString() + "\nmsg: " +Message);
             if (Message == "Success")
             {
-                //trying to start delivery
+                //request to start delivery
+                Order pOrder = this.OrderProvider.FindOrderbyOrderNumber(OrderNumber);
+                OrderProvider.PlaceDeliveryForOrder(pOrder);
+                OrderProvider.SendDeliverySubmittedEmail(OrderNumber);               
             }
             else {
                 //if the transfer fails, send email to the customer with fail message
-                OrderProvider.SendOrderErrorMessage(OrderNumber, Message);
+                OrderProvider.SendTransferErrorEmail(OrderNumber, Message);
             }
         }
     }

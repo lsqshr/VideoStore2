@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="INotifyService.cs" />
+    <Compile Include="IBankNotificationService.cs" />
     <Compile Include="ITransferService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

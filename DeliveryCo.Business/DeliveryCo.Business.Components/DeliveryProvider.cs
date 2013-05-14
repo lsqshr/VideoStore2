@@ -29,7 +29,7 @@ namespace DeliveryCo.Business.Components
 
         private void ScheduleDelivery(DeliveryInfo pDeliveryInfo)
         {
-            Console.WriteLine("Delivering to" + pDeliveryInfo.DestinationAddress);
+            Console.WriteLine("Delivering to" + pDeliveryInfo.DestinationAddress + pDeliveryInfo.OrderNumber);
             Thread.Sleep(1000);
             //notifying of delivery completion
             using (TransactionScope lScope = new TransactionScope())
@@ -38,7 +38,7 @@ namespace DeliveryCo.Business.Components
                 pDeliveryInfo.Status = 1;
                 IDeliveryNotificationService lService = DeliveryNotificationServiceFactory.GetDeliveryNotificationService(pDeliveryInfo.DeliveryNotificationAddress);
                 lService.NotifyDeliveryCompletion(pDeliveryInfo.DeliveryIdentifier, DeliveryInfoStatus.Delivered);
-                Console.WriteLine("after delivery notified.");
+                Console.WriteLine("after delivery notified." + pDeliveryInfo.OrderNumber );
             }
 
         }

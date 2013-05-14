@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="417b39ff-b096-4379-8a3f-bb4e7072829d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="net.tcp://127.0.0.1:9010/BankNotificationService/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="43af6cb8-bb0f-4778-9810-f9bddc7c80c0" SourceId="1" SourceUrl="net.tcp://127.0.0.1:9010/BankNotificationService/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="26680367-6e69-4762-a263-86d04aa02cba" SourceId="1" SourceUrl="net.tcp://127.0.0.1:9010/BankNotificationService/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="9bc8df8b-1524-4bee-bf86-003c759be899" SourceId="1" SourceUrl="net.tcp://127.0.0.1:9010/BankNotificationService/mex" />
+    <MetadataFile FileName="VideoStore.Services.Interfaces.xsd" MetadataType="Schema" ID="24791e66-73a6-455a-9991-2f74a5324645" SourceId="1" SourceUrl="net.tcp://127.0.0.1:9010/BankNotificationService/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

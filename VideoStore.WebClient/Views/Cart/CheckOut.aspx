@@ -9,6 +9,6 @@
     <h2>CheckOut</h2>
 
     <p>Thankyou <%=Model.Name %> for shopping at video store </p>
-    <p>Your order has been submitted, and will be delivered to <%=Model.Address %> in a few days.</p>
+    <p>Your order has been submitted and a fund transfer has been requested, following information will be kept sending to your email address:<%=Model.Email %>, please check your email to see how it goes.</p>
 
 </asp:Content>
