@@ -7,6 +7,9 @@ using System.Transactions;
 using DeliveryCo.Business.Entities;
 using System.Threading;
 using DeliveryCo.Services.Interfaces;
+using System.ServiceModel;
+//using DeliveryCo.Business.Components.DeliveryNotificationSetrvice;
+
 
 namespace DeliveryCo.Business.Components
 {
@@ -29,15 +32,17 @@ namespace DeliveryCo.Business.Components
 
         private void ScheduleDelivery(DeliveryInfo pDeliveryInfo)
         {
+            IDeliveryNotificationService lService = DeliveryNotificationServiceFactory.GetDeliveryNotificationService(pDeliveryInfo.DeliveryNotificationAddress);
             Console.WriteLine("Delivering to" + pDeliveryInfo.DestinationAddress + pDeliveryInfo.OrderNumber);
             Thread.Sleep(1000);
             //notifying of delivery completion
-            using (TransactionScope lScope = new TransactionScope())
+            //using (TransactionScope lScope = new TransactionScope())
             using (DeliveryDataModelContainer lContainer = new DeliveryDataModelContainer())
             {
                 pDeliveryInfo.Status = 1;
-                IDeliveryNotificationService lService = DeliveryNotificationServiceFactory.GetDeliveryNotificationService(pDeliveryInfo.DeliveryNotificationAddress);
                 lService.NotifyDeliveryCompletion(pDeliveryInfo.DeliveryIdentifier, DeliveryInfoStatus.Delivered);
+               // DeliveryNotificationServiceClient DeliveryNotificationSer = new DeliveryNotificationServiceClient();
+                //DeliveryNotificationSer.NotifyDeliveryCompletion(pDeliveryInfo.DeliveryIdentifier, DeliveryInfoStatus.Delivered);
                 Console.WriteLine("after delivery notified." + pDeliveryInfo.OrderNumber );
             }
 

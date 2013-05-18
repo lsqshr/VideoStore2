@@ -7,13 +7,13 @@ using System.ServiceModel;
 
 namespace VideoStore.Services.Interfaces{
 
-    [DataContract]
+    /*[DataContract]
     public enum DeliveryInfoStatus { 
         [EnumMember]
         Successful=1, 
         [EnumMember]
         Failed=0 
-    };
+    };*/
 
     [ServiceContract]
     public interface IBankNotificationService

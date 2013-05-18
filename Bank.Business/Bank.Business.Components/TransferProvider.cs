@@ -6,6 +6,7 @@ using Bank.Business.Components.Interfaces;
 using Bank.Business.Entities;
 using System.Transactions;
 using Bank.Services.Interfaces;
+using System.ServiceModel;
 
 namespace Bank.Business.Components
 {

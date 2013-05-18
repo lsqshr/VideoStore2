@@ -22,7 +22,7 @@ namespace VideoStore.Process
 {
     public class Program
     {
-        private static readonly String sDeliveryCoQueue = ".\\private$\\DeliveryNotificationService";
+        private static readonly String sDeliveryCoQueuePath = ".\\private$\\DeliveryNotificationService";
 
         private static readonly String sNotifyQueuePath = ".\\private$\\BankNotificationService";
 
@@ -39,8 +39,8 @@ namespace VideoStore.Process
             // Create the transacted MSMQ queue if necessary.
             if (!MessageQueue.Exists(sNotifyQueuePath))
                 MessageQueue.Create(sNotifyQueuePath, true);
-            if (!MessageQueue.Exists(sDeliveryCoQueue))
-                MessageQueue.Create(sDeliveryCoQueue, true);
+            if (!MessageQueue.Exists(sDeliveryCoQueuePath))
+                MessageQueue.Create(sDeliveryCoQueuePath, true);
         }
 
         private static void InsertDummyEntities()

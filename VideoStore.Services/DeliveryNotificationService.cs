@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using DeliveryCo.Services.Interfaces;
+//using DeliveryCo.Services.Interfaces;
 using VideoStore.Business.Components.Interfaces;
 using Microsoft.Practices.ServiceLocation;
 using VideoStore.Business.Entities;
+using VideoStore.Services.Interfaces;
+
 
 namespace VideoStore.Services
 {
@@ -19,6 +21,7 @@ namespace VideoStore.Services
         public void NotifyDeliveryCompletion(Guid pDeliveryId, DeliveryInfoStatus status)
         {
             Provider.NotifyDeliveryCompletion(pDeliveryId, GetDeliveryStatusFromDeliveryInfoStatus(status));
+            Console.WriteLine("Debug:NotifyDeliveryCompletion Called!");
         }
 
         private DeliveryStatus GetDeliveryStatusFromDeliveryInfoStatus(DeliveryInfoStatus status)

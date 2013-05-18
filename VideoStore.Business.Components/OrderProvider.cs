@@ -20,7 +20,7 @@ namespace VideoStore.Business.Components
 
         public Order FindOrderbyOrderNumber(Guid tOrderNumber)
         {
-            //using (TransactionScope lScope = new TransactionScope())
+            using (TransactionScope lScope = new TransactionScope())
             using (VideoStoreEntityModelContainer lContainer = new VideoStoreEntityModelContainer())
             {
                 return lContainer.Orders.Include("Customer").FirstOrDefault((pOrder) => pOrder.OrderNumber == tOrderNumber );
@@ -29,23 +29,27 @@ namespace VideoStore.Business.Components
 
         public void SubmitOrder(Entities.Order pOrder)
         {
-            //using (TransactionScope lScope = new TransactionScope())
+            using (TransactionScope lScope = new TransactionScope())
             using (VideoStoreEntityModelContainer lContainer = new VideoStoreEntityModelContainer())
             {
                 try
                 {
                     // Only Request the transfer, delivery will be placed after the trasfer succeed
                     pOrder.OrderNumber = Guid.NewGuid();
+                    //debug call delivery first
                     TransferFundsFromCustomer(pOrder.OrderNumber,pOrder.Customer.BankAccountNumber, pOrder.Total ?? 0.0);
+                    //do delivery fist
+                    //PlaceDeliveryForOrder(pOrder);
                     Console.WriteLine("Bank Done");
                     lContainer.Orders.ApplyChanges(pOrder);
                     lContainer.SaveChanges();
+                    lScope.Complete();
                     //PlaceDeliveryForOrder(pOrder);
                     /*Console.WriteLine("Delivery Done");
                     lContainer.Orders.ApplyChanges(pOrder);
-                    pOrder.UpdateStockLevels();
+                    
                     lContainer.SaveChanges();
-                    lScope.Complete();
+                    
                     Console.WriteLine("order transaction finishes");
                     SendOrderPlacedConfirmation(pOrder);
                     Console.WriteLine("Order confirmation sent");*/
@@ -105,23 +109,34 @@ namespace VideoStore.Business.Components
 
         public void PlaceDeliveryForOrder(Order pOrder)
         {
-            Delivery lDelivery = new Delivery() { ExternalDeliveryIdentifier = Guid.NewGuid(), 
-                DeliveryStatus = DeliveryStatus.Submitted, SourceAddress = "Video Store Address", 
-                DestinationAddress = pOrder.Customer.Address, Order = pOrder };
-            DeliveryServiceClient lClient = new DeliveryServiceClient();
-
-            lClient.SubmitDelivery(new DeliveryInfo()
+            using (TransactionScope lScope = new TransactionScope())
+            using (VideoStoreEntityModelContainer lContainer = new VideoStoreEntityModelContainer())
             {
-                DeliveryIdentifier = lDelivery.ExternalDeliveryIdentifier,
-                OrderNumber = lDelivery.Order.OrderNumber.ToString(),
-                SourceAddress = lDelivery.SourceAddress,
-                DestinationAddress = lDelivery.DestinationAddress,
-                DeliveryNotificationAddress = "net.msmq://localhost/private/DeliveryNotificationService"
-            });
+                Delivery lDelivery = new Delivery()
+                {
+                    ExternalDeliveryIdentifier = Guid.NewGuid(),
+                    DeliveryStatus = DeliveryStatus.Submitted,
+                    SourceAddress = "Video Store Address",
+                    DestinationAddress = pOrder.Customer.Address,
+                    Order = pOrder
+                };
+                DeliveryServiceClient lClient = new DeliveryServiceClient();
 
-            pOrder.Delivery = lDelivery;
-            
-            
+                lClient.SubmitDelivery(new DeliveryInfo()
+                {
+                    DeliveryIdentifier = lDelivery.ExternalDeliveryIdentifier,
+                    OrderNumber = lDelivery.Order.OrderNumber.ToString(),
+                    SourceAddress = lDelivery.SourceAddress,
+                    DestinationAddress = lDelivery.DestinationAddress,
+                    DeliveryNotificationAddress = "net.msmq://localhost/private/DeliveryNotificationService"
+                });
+
+                pOrder.Delivery = lDelivery;
+                lContainer.Orders.ApplyChanges(pOrder);
+                lContainer.Deliveries.ApplyChanges(lDelivery);
+                lContainer.SaveChanges();
+                lScope.Complete();
+            }
         }
 
         private void TransferFundsFromCustomer(Guid OrderNumber,int pCustomerAccountNumber, double pTotal)

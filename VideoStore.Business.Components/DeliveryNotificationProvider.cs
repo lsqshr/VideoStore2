@@ -22,6 +22,7 @@ namespace VideoStore.Business.Components
             UpdateDeliveryStatus(pDeliveryId, status);
             if (status == Entities.DeliveryStatus.Delivered)
             {
+                Console.WriteLine("Order:" + pDeliveryId.ToString() + " Delivered");
                 EmailProvider.SendMessage(new EmailMessage()
                 {
                     ToAddress = lAffectedOrder.Customer.Email,
@@ -30,6 +31,7 @@ namespace VideoStore.Business.Components
             }
             if (status == Entities.DeliveryStatus.Failed)
             {
+                Console.WriteLine("Order:" + pDeliveryId.ToString() + " Failed");
                 EmailProvider.SendMessage(new EmailMessage()
                 {
                     ToAddress = lAffectedOrder.Customer.Email,

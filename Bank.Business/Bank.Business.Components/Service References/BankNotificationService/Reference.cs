@@ -17,10 +17,13 @@ namespace Bank.Business.Components.BankNotificationService {
     public enum DeliveryInfoStatus : int {
         
         [System.Runtime.Serialization.EnumMemberAttribute()]
-        Successful = 1,
+        Submitted = 0,
         
         [System.Runtime.Serialization.EnumMemberAttribute()]
-        Failed = 0,
+        Delivered = 1,
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        Failed = 2,
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]

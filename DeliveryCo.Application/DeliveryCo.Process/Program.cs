@@ -15,7 +15,7 @@ namespace DeliveryCo.Process
 {
     class Program
     {
-        private static readonly String sDeliveryCoQueue = ".\\private$\\DeliveryQ";
+        private static readonly String sDeliveryCoQueue = ".\\private$\\DeliveryService";
 
         static void Main(string[] args)
         {
