@@ -21,17 +21,7 @@ namespace VideoStore.Services
         public void NotifyOperationOutcome(Guid OrderNumber , DeliveryInfoStatus Status , String Message) {
             Console.WriteLine("result received: Order Id " + 
                         OrderNumber.ToString() + "\nmsg: " +Message);
-            if (Message == "Success")
-            {
-                //request to start delivery
-                Order pOrder = this.OrderProvider.FindOrderbyOrderNumber(OrderNumber);
-                OrderProvider.PlaceDeliveryForOrder(pOrder);
-                OrderProvider.SendDeliverySubmittedEmail(OrderNumber);               
-            }
-            else {
-                //if the transfer fails, send email to the customer with fail message
-                OrderProvider.SendTransferErrorEmail(OrderNumber, Message);
-            }
+            this.OrderProvider.HandleBankNotification(OrderNumber, Message);
         }
     }
 }

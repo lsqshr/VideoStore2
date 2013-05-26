@@ -13,5 +13,6 @@ namespace VideoStore.Business.Components.Interfaces
         Order FindOrderbyOrderNumber(Guid tOrderNumber);
         void PlaceDeliveryForOrder(Order pOrder);
         void SendDeliverySubmittedEmail(Guid OrderNumber);
+        void HandleBankNotification(Guid OrderNumber, String pMessaage);
     }
 }

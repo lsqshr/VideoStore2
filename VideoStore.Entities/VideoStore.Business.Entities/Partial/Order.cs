@@ -13,12 +13,22 @@ namespace VideoStore.Business.Entities
             {
                 if (lItem.Media.Stocks.Quantity - lItem.Quantity >= 0)
                 {
+                    Console.WriteLine("Updating Stock level");
                     lItem.Media.Stocks.Quantity -= lItem.Quantity;
                 }
                 else
                 {
                     throw new Exception("Cannot place an order - no more stock for media item");
                 }
+            }
+        }
+
+        public void CompensateStockLevels() { 
+             
+            foreach (OrderItem lItem in this.OrderItems)
+            {
+                    Console.WriteLine("Updating Stock level");
+                    lItem.Media.Stocks.Quantity += lItem.Quantity;
             }
         }
     }

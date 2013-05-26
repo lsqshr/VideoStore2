@@ -36,23 +36,16 @@ namespace VideoStore.Business.Components
                 {
                     // Only Request the transfer, delivery will be placed after the trasfer succeed
                     pOrder.OrderNumber = Guid.NewGuid();
-                    //debug call delivery first
+                    
+                    // update the stock levels for this order before the fund is transferred, 
+                    //because the items should be reserved for this user
+                    // if there is anything wrong with the fund transfer, the stock levels will be added back
+                    pOrder.UpdateStockLevels(); 
                     TransferFundsFromCustomer(pOrder.OrderNumber,pOrder.Customer.BankAccountNumber, pOrder.Total ?? 0.0);
-                    //do delivery fist
-                    //PlaceDeliveryForOrder(pOrder);
                     Console.WriteLine("Bank Done");
                     lContainer.Orders.ApplyChanges(pOrder);
                     lContainer.SaveChanges();
                     lScope.Complete();
-                    //PlaceDeliveryForOrder(pOrder);
-                    /*Console.WriteLine("Delivery Done");
-                    lContainer.Orders.ApplyChanges(pOrder);
-                    
-                    lContainer.SaveChanges();
-                    
-                    Console.WriteLine("order transaction finishes");
-                    SendOrderPlacedConfirmation(pOrder);
-                    Console.WriteLine("Order confirmation sent");*/
                 }
                 catch (Exception lException)
                 {
@@ -80,6 +73,32 @@ namespace VideoStore.Business.Components
  
             }
 
+        }
+
+        public void HandleBankNotification(Guid OrderNumber, String pMessage)
+        { 
+            Order pOrder = this.FindOrderbyOrderNumber(OrderNumber);
+            if (pMessage == "Success")
+            {
+                //request to start delivery
+                this.PlaceDeliveryForOrder(pOrder);
+                this.SendDeliverySubmittedEmail(OrderNumber);
+            }
+            else
+            {
+                //if the transfer fails, send email to the customer with fail message
+                this.SendTransferErrorEmail(OrderNumber, pMessage);
+
+                using (TransactionScope lScope = new TransactionScope())
+                using (VideoStoreEntityModelContainer lContainer = new VideoStoreEntityModelContainer())
+                {
+                    // update the Stock by adding the stock quantity back
+                    pOrder.CompensateStockLevels();
+                    lContainer.Orders.ApplyChanges(pOrder);
+                    lContainer.SaveChanges();
+                    lScope.Complete();
+                }
+            }
         }
 
         public void SendDeliverySubmittedEmail(Guid OrderNumber)
@@ -131,6 +150,8 @@ namespace VideoStore.Business.Components
                     DeliveryNotificationAddress = "net.msmq://localhost/private/DeliveryNotificationService"
                 });
 
+                // update the number of stock corresponding to this order and save the delivery with the order
+                //pOrder.UpdateStockLevels();  We are not updating the stock levels with putting deliver any more 
                 pOrder.Delivery = lDelivery;
                 lContainer.Orders.ApplyChanges(pOrder);
                 lContainer.Deliveries.ApplyChanges(lDelivery);
