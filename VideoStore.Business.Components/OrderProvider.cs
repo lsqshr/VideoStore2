@@ -23,7 +23,7 @@ namespace VideoStore.Business.Components
             using (TransactionScope lScope = new TransactionScope())
             using (VideoStoreEntityModelContainer lContainer = new VideoStoreEntityModelContainer())
             {
-                return lContainer.Orders.Include("Customer").FirstOrDefault((pOrder) => pOrder.OrderNumber == tOrderNumber );
+                return lContainer.Orders.Include("Customer").Include("OrderItems.Media.Stocks").FirstOrDefault((pOrder) => pOrder.OrderNumber == tOrderNumber );
             }
         }
 
@@ -92,9 +92,22 @@ namespace VideoStore.Business.Components
                 using (TransactionScope lScope = new TransactionScope())
                 using (VideoStoreEntityModelContainer lContainer = new VideoStoreEntityModelContainer())
                 {
+                    Console.Write("Trying to call Compensator to restore Stock levels");
                     // update the Stock by adding the stock quantity back
                     pOrder.CompensateStockLevels();
-                    lContainer.Orders.ApplyChanges(pOrder);
+                    //lContainer.Orders.ApplyChanges(pOrder);
+
+                    // see if the compensator works before saving changes
+                    foreach(OrderItem item in pOrder.OrderItems){
+                        Console.Write("Debug: current quentity is: " + item.Media.Stocks.Quantity);
+                        lContainer.Stocks.Attach(item.Media.Stocks);
+                        lContainer.ObjectStateManager.ChangeObjectState(item.Media.Stocks,System.Data.EntityState.Modified);
+                        //lContainer.Stocks.ApplyChanges(item.Media.Stocks);
+                    }
+                    //lContainer.Orders.ApplyChanges(pOrder);
+                    /*lContainer.ObjectStateManager.ChangeObjectState(pOrder,
+                        System.Data.EntityState.Modified);
+                    lContainer.Orders.ApplyChanges(pOrder);*/
                     lContainer.SaveChanges();
                     lScope.Complete();
                 }

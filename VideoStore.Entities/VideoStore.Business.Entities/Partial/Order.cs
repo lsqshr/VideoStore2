@@ -27,7 +27,8 @@ namespace VideoStore.Business.Entities
              
             foreach (OrderItem lItem in this.OrderItems)
             {
-                    Console.WriteLine("Updating Stock level");
+                    Console.WriteLine("Updating Stock level by adding " + lItem.Quantity + " to the stock of "
+                        + lItem.Media.Title);
                     lItem.Media.Stocks.Quantity += lItem.Quantity;
             }
         }
