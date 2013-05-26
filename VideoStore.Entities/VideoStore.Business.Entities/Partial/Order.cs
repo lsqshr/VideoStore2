@@ -13,7 +13,6 @@ namespace VideoStore.Business.Entities
             {
                 if (lItem.Media.Stocks.Quantity - lItem.Quantity >= 0)
                 {
-                    Console.WriteLine("Updating Stock level");
                     lItem.Media.Stocks.Quantity -= lItem.Quantity;
                 }
                 else

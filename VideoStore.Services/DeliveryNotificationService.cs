@@ -21,7 +21,6 @@ namespace VideoStore.Services
         public void NotifyDeliveryCompletion(Guid pDeliveryId, DeliveryInfoStatus status)
         {
             Provider.NotifyDeliveryCompletion(pDeliveryId, GetDeliveryStatusFromDeliveryInfoStatus(status));
-            Console.WriteLine("Debug:NotifyDeliveryCompletion Called!");
         }
 
         private DeliveryStatus GetDeliveryStatusFromDeliveryInfoStatus(DeliveryInfoStatus status)

@@ -36,14 +36,11 @@ namespace DeliveryCo.Business.Components
             Console.WriteLine("Delivering to" + pDeliveryInfo.DestinationAddress + pDeliveryInfo.OrderNumber);
             Thread.Sleep(1000);
             //notifying of delivery completion
-            //using (TransactionScope lScope = new TransactionScope())
             using (DeliveryDataModelContainer lContainer = new DeliveryDataModelContainer())
             {
                 pDeliveryInfo.Status = 1;
                 lService.NotifyDeliveryCompletion(pDeliveryInfo.DeliveryIdentifier, DeliveryInfoStatus.Delivered);
-               // DeliveryNotificationServiceClient DeliveryNotificationSer = new DeliveryNotificationServiceClient();
-                //DeliveryNotificationSer.NotifyDeliveryCompletion(pDeliveryInfo.DeliveryIdentifier, DeliveryInfoStatus.Delivered);
-                Console.WriteLine("after delivery notified." + pDeliveryInfo.OrderNumber );
+                Console.WriteLine("Just notified Video Store the order: " + pDeliveryInfo.OrderNumber + " has been delivered");
             }
 
         }

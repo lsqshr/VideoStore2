@@ -20,7 +20,6 @@ namespace Bank.Business.Components
                 IBankNotificationService lOutcomeService = OperationOutcomeServiceFactory.GetOperationOutcomeService(pResultReturnAddress);
                 try
                 {
-                    Console.WriteLine("Trying to make a new transaction.");
                     Account lFromAcct = GetAccountFromNumber(pFromAcctNumber);
                     Account lToAcct = GetAccountFromNumber(pToAcctNumber);
                     lFromAcct.Withdraw(pAmount);
@@ -30,10 +29,9 @@ namespace Bank.Business.Components
                     lContainer.ObjectStateManager.ChangeObjectState(lFromAcct, System.Data.EntityState.Modified);
                     lContainer.ObjectStateManager.ChangeObjectState(lToAcct, System.Data.EntityState.Modified);
                     lContainer.SaveChanges();
-                    Console.WriteLine("Transfer Transaction Done");
                     lOutcomeService.NotifyOperationOutcome(OrderNumber, 
                         DeliveryInfoStatus.Successful, "Success");
-                    Console.WriteLine("successful message sent!"+OrderNumber.ToString());
+                    Console.WriteLine("Just sent a message of successful transaction to order: "+OrderNumber.ToString());
                     lScope.Complete();
                 }
                 catch (Exception lException)
@@ -42,10 +40,9 @@ namespace Bank.Business.Components
                     Console.WriteLine("Error occured while transferring money:  " + lException.Message);
                     lOutcomeService.NotifyOperationOutcome(OrderNumber, DeliveryInfoStatus.Failed,
                         "Error occured while transferring money:  " + lException.Message);
-                    Console.WriteLine("fail messsage sent!"+OrderNumber.ToString());
+                    Console.WriteLine("Just sent message to notify VideoStore that one transfer has failed, Order Number: "+OrderNumber.ToString());
                     lScope.Complete();
                     lScope.Dispose();      
-                    //throw;
                 }
             }
         }

@@ -14,7 +14,7 @@ namespace VideoStore.Business.Components
             lClient.SendEmail(
                 new EmailService.EmailMessage()
                 {
-                    Message = pMessage.Message,
+                    Message = "\n\nDear Customer,\n" + pMessage.Message,
                     ToAddresses = pMessage.ToAddress,
                     Date = DateTime.Now
                 }

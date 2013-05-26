@@ -22,7 +22,9 @@ namespace VideoStore.Business.Components
             UpdateDeliveryStatus(pDeliveryId, status);
             if (status == Entities.DeliveryStatus.Delivered)
             {
-                Console.WriteLine("Order:" + pDeliveryId.ToString() + " Delivered");
+                Console.WriteLine("=======================================================================");
+                Console.WriteLine("Message from DeliveryCo -> Order: " + pDeliveryId.ToString() + " has been Delivered");
+                Console.WriteLine("=======================================================================");
                 EmailProvider.SendMessage(new EmailMessage()
                 {
                     ToAddress = lAffectedOrder.Customer.Email,
@@ -32,10 +34,11 @@ namespace VideoStore.Business.Components
             if (status == Entities.DeliveryStatus.Failed)
             {
                 Console.WriteLine("Order:" + pDeliveryId.ToString() + " Failed");
+
                 EmailProvider.SendMessage(new EmailMessage()
                 {
                     ToAddress = lAffectedOrder.Customer.Email,
-                    Message = "Our records show that there was a problem" + lAffectedOrder.OrderNumber + " delivering your order. Please contact Video Store"
+                    Message = " !!!ALERT!!!\nOur records show that there was a problem" + lAffectedOrder.OrderNumber + " delivering your order. Please contact Video Store"
                 });
             }
         }

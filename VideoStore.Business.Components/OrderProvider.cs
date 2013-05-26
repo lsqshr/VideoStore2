@@ -36,23 +36,25 @@ namespace VideoStore.Business.Components
                 {
                     // Only Request the transfer, delivery will be placed after the trasfer succeed
                     pOrder.OrderNumber = Guid.NewGuid();
-                    
+
                     // update the stock levels for this order before the fund is transferred, 
                     //because the items should be reserved for this user
                     // if there is anything wrong with the fund transfer, the stock levels will be added back
-                    pOrder.UpdateStockLevels(); 
-                    TransferFundsFromCustomer(pOrder.OrderNumber,pOrder.Customer.BankAccountNumber, pOrder.Total ?? 0.0);
-                    Console.WriteLine("Bank Done");
+                    pOrder.UpdateStockLevels();
+                    TransferFundsFromCustomer(pOrder.OrderNumber, pOrder.Customer.BankAccountNumber, pOrder.Total ?? 0.0);
+                    Console.WriteLine("Fund transfer of order: " + pOrder.OrderNumber + " has been requested to the bank");
                     lContainer.Orders.ApplyChanges(pOrder);
                     lContainer.SaveChanges();
-                    lScope.Complete();
                 }
                 catch (Exception lException)
                 {
-                    //SendTransferErrorEmail(pOrder, lException);
-                    Console.WriteLine("Transer Message Failed");
-                    Console.WriteLine(lException.Message);
+                    SendTransferErrorEmail(pOrder.OrderNumber, lException.Message);
+                    Console.WriteLine("Something wrong happened. The fund transferr request were not able to be placed.");
+                    Console.WriteLine( "Exception Message:" + lException.Message);
                     throw;
+                }
+                finally { 
+                    lScope.Complete();
                 }
             }
         }
@@ -92,14 +94,13 @@ namespace VideoStore.Business.Components
                 using (TransactionScope lScope = new TransactionScope())
                 using (VideoStoreEntityModelContainer lContainer = new VideoStoreEntityModelContainer())
                 {
-                    Console.Write("Trying to call Compensator to restore Stock levels");
+                    Console.Write("Calling Compensator to restore Stock levels");
                     // update the Stock by adding the stock quantity back
                     pOrder.CompensateStockLevels();
                     //lContainer.Orders.ApplyChanges(pOrder);
 
                     // see if the compensator works before saving changes
                     foreach(OrderItem item in pOrder.OrderItems){
-                        Console.Write("Debug: current quentity is: " + item.Media.Stocks.Quantity);
                         lContainer.Stocks.Attach(item.Media.Stocks);
                         lContainer.ObjectStateManager.ChangeObjectState(item.Media.Stocks,System.Data.EntityState.Modified);
                         //lContainer.Stocks.ApplyChanges(item.Media.Stocks);
@@ -110,6 +111,7 @@ namespace VideoStore.Business.Components
                     lContainer.Orders.ApplyChanges(pOrder);*/
                     lContainer.SaveChanges();
                     lScope.Complete();
+                    Console.WriteLine("Easy! Stock levels have been restored.");
                 }
             }
         }
@@ -179,7 +181,6 @@ namespace VideoStore.Business.Components
                 lClient.Transfer(OrderNumber, pTotal, 
                     pCustomerAccountNumber, RetrieveVideoStoreAccountNumber(),
                     "net.msmq://localhost/private/BankNotificationService");
-                Console.WriteLine("new transfer message sent" + OrderNumber.ToString());
             }
         }
 

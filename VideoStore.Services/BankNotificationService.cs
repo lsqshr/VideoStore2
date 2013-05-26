@@ -19,7 +19,7 @@ namespace VideoStore.Services
         }
 
         public void NotifyOperationOutcome(Guid OrderNumber , DeliveryInfoStatus Status , String Message) {
-            Console.WriteLine("result received: Order Id " + 
+            Console.WriteLine("Bank transfer result received: Order Id " + 
                         OrderNumber.ToString() + "\nmsg: " +Message);
             this.OrderProvider.HandleBankNotification(OrderNumber, Message);
         }
